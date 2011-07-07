@@ -1,5 +1,4 @@
 
-
 class Application
 attr_accessor :ip
 
@@ -26,24 +25,9 @@ def request
    end
 
    puts Sanitize.clean(location)
-  # puts /(.*?)<\/a>/.match(location);
-   #@url = URI.parse(@url)
-   #url = URI::HTTP.build({:host => @url.host, :port => @url.port, :path => @url.path + 'geoip.php?ip=#{@ip}'}) 
-   #response = Net::HTTP.get_response(url)
-   
-   #puts response.body
-
-   #puts @ip
+  
 end
 
 end
 
-#def request
 
-#@url = "http://www.geody.com/"
- #url = URI::HTTP.build({:host => @url.host, :port => @url.port, :path => @url.path + 'geoip.php?ip='}) 
- #response = Net::HTTP.get_response(url)
-
- #return response.body
-
-#end
